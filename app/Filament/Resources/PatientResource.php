@@ -71,6 +71,9 @@ class PatientResource extends Resource
                 ->sortable(),
                 Tables\Columns\TextColumn::make('owner.name')  
                 ->searchable(),
+                Tables\Columns\TextColumn::make('owner.phone')  
+                ->label('Phone Number')
+                ->searchable(),
             
             ])
             ->filters([
